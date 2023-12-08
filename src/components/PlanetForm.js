@@ -44,7 +44,7 @@ const PlanetForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/galaxy", {
+      const response = await axios.post("http://103.127.97.98:3555/galaxy", {
         ...chosenPlanets,
       });
       setResult(response.data);
